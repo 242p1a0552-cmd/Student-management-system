@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h2>Student Management</h2>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#register">Registration</a>
+            <a href="#students">Students</a>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <h1>Welcome to Student Management System</h1>
+        <p>Manage student information easily and efficiently.</p>
+        <a class="btn" href="#register">Register Student</a>
+    </section>
+
+    <section id="register" class="container">
+        <h2>Student Registration</h2>
+        <form id="studentForm">
+            <input id="name" type="text" placeholder="Student Name" required>
+            <input id="roll" type="text" placeholder="Roll Number" required>
+            <input id="email" type="email" placeholder="Email Address" required>
+            <input id="course" type="text" placeholder="Course" required>
+            <button type="submit">Register Student</button>
+        </form>
+    </section>
+
+    <section id="students" class="container">
+        <h2>Registered Students</h2>
+        <ul id="studentList"></ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
